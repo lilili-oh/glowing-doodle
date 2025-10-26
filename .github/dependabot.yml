@@ -1,0 +1,12 @@
+# .github/dependabot.yml
+version: 2
+updates:
+  - package-ecosystem: "pip"
+    directory: "/"              # requirements.txt 所在路径
+    schedule:
+      interval: "daily"         # 检查频率：daily / weekly / monthly
+    open-pull-requests-limit: 5 # 同时最多5个PR
+    # 可以忽略指定依赖（可选）
+    # ignore:
+    #   - dependency-name: "requests"
+    #     versions: ["2.x"]
